@@ -16,6 +16,17 @@ These scripts are designed to work with [Tampermonkey](https://www.tampermonkey.
 
 ---
 
+## 📁 Installation
+
+1. Install [Tampermonkey](https://www.tampermonkey.net/) in your browser.
+2. Open the Tampermonkey dashboard and click **"Create a new script..."**.
+3. Delete the default template and paste in the code from the script you want.
+4. Click **File → Save**, then refresh the Reddit page.
+5. For a visual guide, see:  
+   👉 [How to Install Userscripts in Tampermonkey (Official FAQ)](https://www.tampermonkey.net/faq.php?ext=dhdg#Q102)
+   
+---
+
 ## 🗑 Reddit Comment Deleter
 
 **URL match:** `https://old.reddit.com/user/<your_username>/comments`
@@ -55,6 +66,8 @@ These scripts are designed to work with [Tampermonkey](https://www.tampermonkey.
 - These actions are **irreversible**. Once deleted or unvoted, content cannot be restored.
 - Use at your own risk.
 - Reddit may rate-limit or throttle your actions if used too quickly or excessively.
+- Deleted content may still exist on Reddit’s databases or appear "deleted" without being fully removed.
+- Your data might also have been archived by third-party scrapers and could still be accessible elsewhere.
 
 ---
 
