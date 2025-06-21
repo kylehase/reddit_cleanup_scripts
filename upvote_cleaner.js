@@ -1,8 +1,8 @@
 // ==UserScript==
 // @name         Reddit Upvote Cleaner
 // @namespace    https://old.reddit.com/
-// @version      1.1
-// @description  Click all upvotes on old Reddit upvoted page and auto-reload until done
+// @version      1.2
+// @description  Click all upvotes on old Reddit upvoted page and auto-reload until done, with delay to avoid rate-limiting (429)
 // @author       github.com/kylehase
 // @include      https://old.reddit.com/user/*/upvoted*
 // @grant        none
@@ -17,9 +17,10 @@
   async function clickAllUpvotes() {
     const buttons = [...document.querySelectorAll('div.arrow.upmod.login-required.access-required')];
     console.log(`Clicking ${buttons.length} upvotes...`);
-    for (const b of buttons) {
+    for (const [i, b] of buttons.entries()) {
+      console.log(`Clicking upvote ${i + 1}/${buttons.length}`);
       b.click();
-      await delay(300);
+      await delay(2000); // 2 second delay between clicks
     }
     return buttons.length;
   }
@@ -29,7 +30,7 @@
       const count = await clickAllUpvotes();
       if (count > 0) {
         console.log("Refreshing page...");
-        setTimeout(() => location.reload(), 1500);
+        setTimeout(() => location.reload(), 3000); // delay before reload for safety
       } else {
         console.log("All upvotes cleared. Stopping.");
         localStorage.removeItem(storageKey);
