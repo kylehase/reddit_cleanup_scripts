@@ -7,6 +7,8 @@ This repository contains two Tampermonkey userscripts for cleaning up your Reddi
 
 These scripts are designed to work with [Tampermonkey](https://www.tampermonkey.net/) in Chrome or other Chromium-based browsers.
 
+It is said that deleting comments is a more thorough than simply deleting an account.
+
 ---
 
 ## 🧩 Requirements
