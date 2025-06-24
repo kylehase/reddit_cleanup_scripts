@@ -7,8 +7,6 @@ This repository contains two Tampermonkey userscripts for cleaning up your Reddi
 
 These scripts are designed to work with [Tampermonkey](https://www.tampermonkey.net/) in Chrome or other Chromium-based browsers.
 
-It is said that deleting comments is more thorough than simply deleting an account.
-
 ---
 
 ## 🧩 Requirements
@@ -73,12 +71,11 @@ It is said that deleting comments is more thorough than simply deleting an accou
 
 ---
 
-## 📁 Installation
+## ❓ FAQ
 
-1. Install [Tampermonkey](https://www.tampermonkey.net/)
-2. Add each script from this repo using the “Create a new script” option
-3. Paste in the code for the script you want
-4. Save and refresh the target Reddit page
+1. Why use this when I can just delete the account? - Deleting an account may not delete comments. This is more thorough.
+2. What about deleting posts? - Most users have far fewer posts than comments and upvotes, so I created tools for the latter.
+3. Does this delete all comments and upvotes? - These tools delete what is visible on old.reddit.com. It's possible that some content may not be displayed there.
 
 ---
 
